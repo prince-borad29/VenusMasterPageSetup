@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\Product_db.mdf" />
+    <Content Include="App_Data\Product_db_log.ldf">
+      <DependentUpon>Product_db.mdf</DependentUpon>
+    </Content>
     <Content Include="Cart.aspx" />
     <Content Include="Checkout.aspx" />
     <Content Include="Contact.aspx" />
@@ -178,6 +182,7 @@
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
     <Content Include="Product-detail.aspx" />
+    <Content Include="Product_demo.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Registration.css" />
@@ -242,6 +247,13 @@
     </Compile>
     <Compile Include="Product-detail.aspx.designer.cs">
       <DependentUpon>Product-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product_demo.aspx.cs">
+      <DependentUpon>Product_demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product_demo.aspx.designer.cs">
+      <DependentUpon>Product_demo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
@@ -325,7 +337,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images1\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

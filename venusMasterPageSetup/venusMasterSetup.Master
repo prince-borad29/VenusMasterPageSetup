@@ -50,6 +50,9 @@
                             <li id="liContactPage" class="nav-item" runat="server">
                                 <a id="aContactPage" class="nav-link" href="Contact.aspx" runat="server">Contact us</a>
                             </li>
+                            <li id="liProductDemo" class="nav-item" runat="server">
+                                <a id="a1" class="nav-link" href="Product_demo.aspx" runat="server">Product</a>
+                            </li>
                         </ul>
 
                         <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
